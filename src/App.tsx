@@ -1,5 +1,7 @@
+import { TodoFilters, TodoInput } from "./components/FilterContext";
 import { TodoProvider, useTodos } from "./components/ToDoContext";
 import { TodoItem } from "./components/ToDoItem";
+import "./App.css"
 
 
 const TodoList = () => {
@@ -22,7 +24,9 @@ export default function App() {
   return (
     <TodoProvider>
       <div className="container">
-        <h1>Todo App</h1>
+        <h1 style={{color: "blueviolet"}}>Todo App</h1>
+        <TodoInput /><br />
+        <TodoFilters /><br />
         <TodoList />
       </div>
     </TodoProvider>

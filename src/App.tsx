@@ -3,7 +3,6 @@ import { TodoProvider, useTodos } from "./components/ToDoContext";
 import { TodoItem } from "./components/ToDoItem";
 import "./App.css"
 
-
 const TodoList = () => {
   const { todos, filter } = useTodos();
   

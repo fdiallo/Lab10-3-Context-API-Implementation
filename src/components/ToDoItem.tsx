@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { useTodos } from "./ToDoContext";
 import type { Todo } from "../types";
-
+import { useTodos } from "./ToDoContext";
 
 export const TodoItem = ({ todo }: { todo: Todo }) => {
   const { toggleTodo, deleteTodo, editTodo } = useTodos();
@@ -28,4 +27,3 @@ export const TodoItem = ({ todo }: { todo: Todo }) => {
     </li>
   );
 };
-

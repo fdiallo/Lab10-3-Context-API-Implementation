@@ -5,7 +5,7 @@ import "./App.css"
 
 const TodoList = () => {
   const { todos, filter } = useTodos();
-  
+
   const filteredTodos = todos.filter(t => {
     if (filter === 'active') return !t.completed;
     if (filter === 'completed') return t.completed;
@@ -23,7 +23,7 @@ export default function App() {
   return (
     <TodoProvider>
       <div className="container">
-        <h1 style={{color: "blueviolet"}}>Todo App</h1>
+        <h1 style={{ color: "blueviolet" }}>Todo App</h1>
         <TodoInput /><br />
         <TodoFilters /><br />
         <TodoList />
